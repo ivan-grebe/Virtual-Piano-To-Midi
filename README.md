@@ -25,6 +25,8 @@ Create your own virtual piano sheet or use one from [Virtual Piano](https://virt
 
 [asdf] - Notes are played together simultaneously
 
+TEMPO:xxx - Insert to wherever you want a tempo change
+
 ## Contribution
 
 Pull requests are welcome. Please open an issue with any problems.

@@ -27,6 +27,8 @@ Create your own virtual piano sheet or use one from [Virtual Piano](https://virt
 
 TEMPO:xxx - Insert to wherever you want a tempo change
 
+Examples shown in demo file. Try and guess what song it is!
+
 ## Contribution
 
 Pull requests are welcome. Please open an issue with any problems.

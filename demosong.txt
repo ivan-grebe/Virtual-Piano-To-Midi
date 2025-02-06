@@ -1,0 +1,49 @@
+TEMPO:100
+[48qtuipj] ' ' ' x ' ' ' ' ' ' ' [pj] ' ' '
+x ' ' ' ' ' ' ' [59wuoak] ' ' ' x ' ' ' ' ' ' '
+[ak] ' ' ' x ' ' ' ' ' ' ' [60etupsl] ' ' '
+x ' ' ' ' ' ' ' [sl] ' ' ' x ' ' ' ' ' ' '
+[59wyuoadz] ' ' ' x ' ' ' ' ' ' ' [dz] ' ' '
+x ' ' ' k ' ' ' [48qtuipj] '  x ' x ' x ' ' ' '
+x ' j ' x ' x ' x ' ' ' ' x ' [59wuoak] '
+x ' x ' x ' ' ' ' x ' k ' x ' x '
+x ' ' ' x ' [60etupl] ' x ' x ' x ' ' '
+x ' l ' x ' x ' x ' ' ' ' x ' [59wyuoak] '
+x ' x ' x ' ' ' ' x ' k ' x ' x '
+x ' ' ' ' x '
+TEMPO:160
+[3tuip]-[is]-[uf]-[ij]-[up]-[is]-[uf]-[ij]-[up]-[is]-
+[uf]-[ij]-[ua]-[id]-[uf]-[ik]-[ua]-[id]-[uf]-[ik]-[ua]-[id]-[uf]-[ik]-[ua]-[id]-
+[uf]-[ik]-[ua]-[id]-[uf]-[ik]-[ua]-[id]-[uf]-[ik]-[up]-[is]-[uf]-[ij]-[uo]-[ia]-
+[uf]-[ih]-[up]-[is]-[uf]-[ij]-[ua]-[id]-[uf]-[ik]-[ua]-[id]-[uf]-[ik]-[ua]-[id]-
+[uf]-[ik]-[48qtuipj]-i-u-e-[tfx]-i-u-e-[tpj]-i-u-e-[tpj]-i-
+u-e-[tfx]-i-u-e-[tpj]-i-u-e-[50ruoak]-o-u-w-[rfx]-o-
+u-w-[rak]-o-u-w-[rak]-o-u-w-[rfx]-o-u-w-[rak]-o-
+u-w-[60tupsl]-i-u-e-[tfx]-i-u-e-[tsl]-i-u-e-[tsl]-i-
+u-e-[tfx]-i-u-e-[tsl]-i-u-e-[48qetuipj]-d-[qf]-g-[qj]-d-
+[qf]-s-[qj]-d-[qf]-g-[48ej]-d-[4f]-g-[4j]-l-[4j]-h-[4j]-d-
+[4f]-g-[59wruoak]-d-[wf]-h-[wk]-d-[wf]-s-[wk]-d-[wf]-h-[59rk]-d-
+[5f]-h-[5k]-z-[5j]-h-[5k]-d-[5f]-h-[60etupl]-f-[ej]-k-[el]-f-
+[ej]-s-[el]-f-[ej]-k-[60tl]-f-[6j]-k-[6l]-x-[6k]-j-[6l]-f-
+[6j]-k-[59wryuoaz]-f-[wh]-k-[wx]-f-[wh]-a-[wz]-f-[wh]-k-[59rx]-f-
+[5h]-k-[5z]-x-[5k]-h-[5x]-j-[5k]-f-[48qetuipj]-d-[qf]-g-[qx]-d-
+[qf]-s-[qj]-d-[qf]-g-[48ej]-d-[4f]-g-[4x]-l-[4j]-h-[4j]-d-
+[4f]-g-[59wruoak]-d-[wf]-h-[wx]-d-[wf]-s-[wk]-d-[wf]-h-[59rk]-d-
+[5f]-h-[5x]-z-[5j]-h-[5k]-d-[5f]-h-[60etupl]-f-[ej]-k-[wx]-f-
+[ej]-s-[el]-f-[ej]-k-[60tl]-f-[6j]-k-[6x]-x-[6k]-j-[6l]-f-
+[6j]-k-[59wryuoaz]-f-[wh]-k-[wx]-f-[wh]-a-[wz]-f-[wh]-k-[59rx]-f-
+[5h]-k-[5z]-x-[5k]-h-[5x]-j-[5k]-f-[4tuip]-[6a]-[8f]-[ea]-[8p]-[6u]-
+[4p]-[6a]-[8f]-[ea]-[8p]-[6u]-[4p]-[6a]-[8f]-[ea]-[8p]-[6u]-[4p]-[6a]-[8f]-[ea]-
+[8p]-[6u]-[5uoa]-[7d]-[9f]-[wd]-[9a]-[7u]-[5a]-[7a]-[9f]-[wd]-[9a]-[7o]-[5a]-[7d]-
+[9f]-[wd]-[9a]-[7u]-[5a]-[7a]-[9f]-[wd]-[9a]-[7o]-[6tups]-[8f]-[0f]-[ef]-[0s]-[8p]-
+[6s]-[8f]-[0f]-[ef]-[0s]-[8p]-[6s]-[8f]-[0f]-[ef]-[0s]-[8p]-[6s]-[8f]-[0f]-[ef]-
+[0s]-[8p]-[5yuoad]-[9o]-[wf]-[yd]-[wo]-[9y]-[5d]-[9o]-[wf]-[yf]-[wd]-[9o]-[5d]-[9o]-
+[wf]-[yd]-[wo]-[9y]-[5d]-[9o]-[wf]-[yf]-[wd]-[9o]-[4tuipj]-[6d]-[8f]-[eg]-[4x]-[6d]-
+[8f]-[es]-[4j]-[6d]-[8f]-[eg]-[4j]-[6d]-[8f]-[eg]-[4x]-[6l]-[8j]-[eh]-[4j]-[6d]-
+[8f]-[eg]-[5uoak]-[7d]-[9f]-[wh]-[5x]-[7d]-[9f]-[ws]-[5k]-[7d]-[9f]-[wh]-[5k]-[7d]-
+[9f]-[wh]-[5x]-[7z]-[9j]-[wh]-[5k]-[7d]-[9f]-[wh]-[6tupl]-[8f]-[0j]-[ek]-[6x]-[8f]-
+[0j]-[es]-[6l]-[8f]-[0j]-[ek]-[6l]-[8f]-[0j]-[ek]-[6x]-[8x]-[0k]-[ej]-[6l]-[8f]-
+[0j]-[ek]-[5yuoaz]-[7f]-[9h]-[yk]-[5x]-[7f]-[9h]-[ya]-[5z]-[7f]-[9h]-[yk]-[5x]-[7f]-
+[9h]-[yk]-[5z]-[7x]-[9k]-[yh]-[5x]-[7j]-[9k]-[yf]-[4tuipj]-[6d]-[8f]-[eg]-[4x]-[6d]-
+[8f]-[es]-[4j]-[6d]-[8f]-[eg]-[4j]-[6d]-[8f]-[eg]-[4x]-[6l]-[8j]-[eh]-[4j]-[6d]-
+[8f]-[eg]-[5uoak]-[7d]-[9f]-[wh]-[5x]-[7d]-[9f]-[ws]-[5k]-[7d]-[9f]-[wh]-[3fx]

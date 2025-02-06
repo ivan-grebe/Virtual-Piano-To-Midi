@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Navigate to the installed folder and run
+Navigate to the installed folder in your command prompt and run
 ```bash
 python vp_to_midi.py
 ```

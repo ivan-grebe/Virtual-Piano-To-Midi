@@ -10,6 +10,11 @@ pip install -r requirements.txt
 
 ## Usage
 
+Navigate to the installed folder and run
+```bash
+python vp_to_midi.py
+```
+
 Create your own virtual piano sheet or use one from [Virtual Piano](https://virtualpiano.net/) or [vpsheets](https://vp-sheets.fly.dev/) and paste it into the text box. Adjust timing using the tempo and rest semantics as needed. Press "Generate Midi" and play your song!
 
 ## Semantics

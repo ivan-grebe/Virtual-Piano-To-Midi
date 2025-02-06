@@ -15,7 +15,9 @@ Create your own virtual piano sheet or use one from [Virtual Piano](https://virt
 ## Semantics
 
 ' - One beat rest
+
 | - One second rest
+
 [asdf] - Notes are played together simultaneously
 
 ## Contribution

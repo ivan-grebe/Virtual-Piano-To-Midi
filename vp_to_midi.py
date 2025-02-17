@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import mido
 from mido import Message, MidiFile, MidiTrack, MetaMessage 
 import tkinter as tk

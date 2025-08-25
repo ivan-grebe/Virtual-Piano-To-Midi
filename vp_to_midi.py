@@ -113,8 +113,7 @@ def parse_virtual_piano(sheet: str):
                     'type': 'tempo',
                     'tempo': 60000000 // new_bpm  # microseconds per beat
                 })
-            except (IndexError, ValueError):
-                # silently ignore bad tempo tokens
+            except:
                 pass
         elif token == "|":  # long rest
             events.append({'type': 'rest', 'delay': 600})

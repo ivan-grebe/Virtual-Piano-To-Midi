@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import mido
 from mido import Message, MidiFile, MidiTrack, MetaMessage 
 import tkinter as tk
 from tkinter import messagebox
@@ -23,11 +22,9 @@ row1_white = {
 row1_black = {
     '!': 37,  # C#2
     '@': 39,  # D#2
-    # no black key after '3'
     '$': 42,  # F#2 (shifted 4)
     '%': 44,  # G#2 (shifted 5)
     '^': 46,  # A#2 (shifted 6)
-    # no black key after '7'
     '*': 49,  # C#3 (shifted 8)
     '(': 51   # D#3 (shifted 9)
 }
@@ -49,10 +46,8 @@ row2_black = {
     'Q': 54,  # F#3
     'W': 56,  # G#3
     'E': 58,  # A#3
-    # no black key after r
     'T': 61,  # C#4
     'Y': 63,  # D#4
-    # no black key after u
     'I': 66,  # F#4
     'O': 68,  # G#4
     'P': 70   # A#4
@@ -71,14 +66,11 @@ row3_white = {
     'l': 84   # C6
 }
 row3_black = {
-    # no black key for 'a' cuz B to C has no accidental
-    'S': 73,  # C#5 (after s)
-    'D': 75,  # D#5 (after d)
-    # no black after f
-    'G': 78,  # F#5 (after g)
-    'H': 80,  # G#5 (after h)
-    'J': 82   # A#5 (after j)
-    # no black after k
+    'S': 73,  # C#5
+    'D': 75,  # D#5
+    'G': 78,  # F#5
+    'H': 80,  # G#5
+    'J': 82   # A#5
 }
 
 # row 4 (z to m): white keys and black keys
@@ -92,12 +84,10 @@ row4_white = {
     'm': 96   # C7
 }
 row4_black = {
-    'Z': 87,  # D#6 (after z)
-    # no black after x
-    'C': 90,  # F#6 (after c)
-    'V': 92,  # G#6 (after v)
-    'B': 94   # A#6 (after b)
-    # no black after n or m
+    'Z': 87,  # D#6
+    'C': 90,  # F#6
+    'V': 92,  # G#6
+    'B': 94   # A#6
 }
 
 # merge all the mappings
@@ -106,14 +96,10 @@ for mapping in (row1_white, row1_black, row2_white, row2_black,
                 row3_white, row3_black, row4_white, row4_black):
     key_mapping.update(mapping)
 
-# allowed characters are the keys in our mapping
-allowed_chars = set(key_mapping.keys())
-
-# parser stuff
+# parser
 def parse_virtual_piano(sheet: str):
-    sheet = sheet.replace('-', ' ')  # - treated as space
+    sheet = sheet.replace('-', ' ')  # treat '-' as space
     events = []
-    current_bpm = 100  # default tempo
     tokens = sheet.split()
     
     for token in tokens:
@@ -123,25 +109,17 @@ def parse_virtual_piano(sheet: str):
                 new_bpm = int(bpm_str)
                 if new_bpm <= 0:
                     raise ValueError("BPM must be positive")
-                current_bpm = new_bpm
                 events.append({
                     'type': 'tempo',
                     'tempo': 60000000 // new_bpm  # microseconds per beat
                 })
-            except (IndexError, ValueError) as e:
-                print(f"Invalid TEMPO token '{token}': {e}. Ignored.")
-        elif token == "|":
-            events.append({
-                'type': 'note',
-                'notes': [],
-                'delay': 600 # one second delay
-            })
-        elif token == "'":
-            events.append({
-                'type': 'note',
-                'notes': [],
-                'delay': 120 # one beat delay
-            })
+            except (IndexError, ValueError):
+                # silently ignore bad tempo tokens
+                pass
+        elif token == "|":  # long rest
+            events.append({'type': 'rest', 'delay': 600})
+        elif token == "'":  # short rest
+            events.append({'type': 'rest', 'delay': 120})
         elif token.startswith('[') and token.endswith(']'):
             chord = [key_mapping[ch] for ch in token[1:-1] if ch in key_mapping]
             events.append({'type': 'note', 'notes': chord, 'delay': 200})
@@ -173,13 +151,13 @@ def create_midi(sheet: str, filename: str = "output.mid"):
                 # note on for all notes
                 for note in notes:
                     track.append(Message('note_on', note=note, velocity=64, time=0))
-                # note off with delay
+                # note off with delay on the first note
                 track.append(Message('note_off', note=notes[0], velocity=64, time=delay))
                 for note in notes[1:]:
                     track.append(Message('note_off', note=note, velocity=64, time=0))
-            else:
-                # rest
-                track.append(Message('note_off', note=0, velocity=0, time=delay))
+        elif event['type'] == 'rest':
+            # rest = just advance time
+            track.append(MetaMessage('track_name', name='', time=event['delay']))
     
     mid.save(filename)
     messagebox.showinfo("Success", f"MIDI file saved as {filename}")
